@@ -67,4 +67,10 @@
     }
 
 }
+
+@media (max-width: 320px) {
+    .container {
+        padding: 0 20px;
+    }
+}
             
