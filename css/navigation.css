@@ -8,6 +8,7 @@
     font-weight: 300;
     line-height: 22px;
     font-size: 18px;
+    transition: all .3s;
 }
 
 /* .navigation__link:hover {
@@ -16,6 +17,7 @@
 .navigation__link:focus {
     outline: none;
 }
+.navigation__link:hover::after,
 .navigation__link:active::after,
 .navigation__link:focus::after {
     position: absolute;
