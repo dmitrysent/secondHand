@@ -6,6 +6,7 @@
 }
 
 
+
 .search__button {
     position: relative;
     display: block;
@@ -21,6 +22,7 @@
     border-radius: 20px;
     z-index: 2;
 }
+
 
 .search__input {
     position: absolute;

@@ -1,16 +1,22 @@
 :root {
-    --bg-color: #F5F5F5;
-    --white-color: #fff;
-    --main-color: #272727;
+
 }
 
 html {
     box-sizing: border-box;
+    --bg-color: #F5F5F5;
+    --white-color: #fff;
+    --main-color: #272727;
+    --heart-color: #D93162;
+    --titile-card-color: #4D4D4D;
+    --bg-card-color: #464343;
     color: var(--main-color);
     
 }
 
-
+.hidden {
+    display: none;
+}
 
 *,
 *::after,
