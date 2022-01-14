@@ -37,14 +37,14 @@
     
 }
 
-.search__active .search__input {
+.search_active .search__input {
     transform: scaleX(1);
     padding: 14px 30px;
     transition: border-radius .2s easy-in-out;
 
 }
 
-.search__active .search__button {
+.search_active .search__button {
     border-radius: 0 20px 20px 0;
 }
 
@@ -64,7 +64,7 @@
     z-index: 3;
 }
 
-.search__active .search__close {
+.search_active .search__close {
     visibility: visible;
     opacity: 0.4;
 }
@@ -87,6 +87,10 @@
 
     .search__button {
         border-radius: 0 12px 12px 0 ;
+    }
+
+    .search__close {
+        display: none;
     }
 }
 

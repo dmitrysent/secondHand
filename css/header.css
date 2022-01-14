@@ -33,15 +33,23 @@
 }
 .header__btn_card {
     background-image: url("../img/card.svg");
+    transition: all .3s;
 
 }
 .header__btn-favorite {
     background-image: url("../img/favorite.svg");
+    transition: all .3s;
 
 }
 .header__btn-person {
     background-image: url("../img/person.svg");
+    transition: all .3s;
+}
 
+.header__btn_card:hover,
+.header__btn-favorite:hover,
+.header__btn-person:hover {
+    opacity: 0.5;
 }
 
 @media (max-width: 1000px) {
@@ -68,7 +76,7 @@
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 580px) {
     .container {
         padding: 0 20px;
     }
