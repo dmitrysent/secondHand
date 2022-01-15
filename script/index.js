@@ -30,16 +30,17 @@ selectControl ({
 
 });
 
-slider ({
+const checkSlider = slider ({
+    selectorParentSlider: '.hero',
     selectorSlider: '.hero__slider',
     selectorPagination: '.swiper-pagination',
     bulletClass: 'hero__slider-line',
     bulletActiveClass: 'hero__slider-line_active',
 });
 
-
-renderGoods();
-interceptLink();
+// checkSlider();
+renderGoods(location.search);
+interceptLink(checkSlider);
 
 
 
