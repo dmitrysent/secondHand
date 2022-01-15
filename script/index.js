@@ -2,7 +2,9 @@ import burgerMenu from "./modules/burgerMenu.js";
 import searchControl from "./modules/searchControl.js";
 import selectControl from "./modules/selectControl.js";
 import slider from "./modules/slider.js";
-
+import serviceGoods from "./service/serviceGoods.js";
+import renderGoods from "./modules/renderGoods.js";
+import interceptLink from "./modules/interceptLink.js";
 
 burgerMenu({
     selectorBtn: '.navigation__btn',
@@ -36,7 +38,9 @@ slider ({
 });
 
 
-document.addEventListener('click', e => e.preventDefault());
+renderGoods();
+interceptLink();
+
 
 
 
