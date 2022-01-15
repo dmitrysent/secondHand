@@ -6,7 +6,7 @@ const searchControl = ({selectorBtn, selectorForm, classActive, selectorClose, b
     const activateForm = () => {
         form.classList.add(classActive);
         btn.removeEventListener('click', activateForm);
-        btn.type = "submit";
+        // btn.type = "submit";
     };
     const deactivateForm = () => {
         form.classList.remove(classActive);
