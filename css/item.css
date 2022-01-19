@@ -18,6 +18,9 @@
     color: var(--white-color);
     transition: color .4s ease-in-out, opacity .4s ease-in-out;
 }
+.item__favorite-btn.active {
+    color: var(--heart-color);
+}
 
 .item__favorite-btn:hover {
     color: var(--heart-color);
@@ -29,11 +32,11 @@
     opacity: 0;
 }
 
-.item__favorite-btn:focus {
+/* .item__favorite-btn:focus {
     color: var(--heart-color);
     opacity: 0.75;
     outline: none;
-}
+} */
 
 .item__control-wrapper {
     display: grid;

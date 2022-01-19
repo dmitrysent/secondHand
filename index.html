@@ -33,7 +33,7 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a class="header__logo" href="http://127.0.0.1:5555/index.html">
+        <a class="header__logo" href="/">
           <img class="header__logo-img" src="img/logo.svg" alt="Лого сайта" />
         </a>
 
@@ -130,7 +130,7 @@
       <section class="goods">
         <div class="container">
           <ul class="goods__list">
-            <li class="goods__item">
+            <!-- <li class="goods__item">
               <article class="item">
                 <img src="img/jemper.jpg" alt="Джемпер" class="item__img" />
                 <button class="item__favorite-btn">
@@ -326,7 +326,7 @@
                   </button>
                 </div>
               </article>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
@@ -470,7 +470,7 @@
           <img
             src="img/cfcf2f84bb228803625561152c2b9c6e2.jpg"
             alt="Джемпер"
-            class="modalpitem__img"
+            class="modal-item__img"
           />
           <div class="modal-item__description">
             <h2 class="modal-item__title">Жилет</h2>
@@ -500,15 +500,17 @@
             </ul>
             <p class="modal-item__article">
               Артикул:
-              <span class="modal-item__text"> IX001XW016CK</span>
+              <span class="modal-item__text modal-item__text_article">
+                IX001XW016CK</span
+              >
             </p>
 
             <div class="modal-item__btn-group">
               <button class="modal-item__btn-to-card">В корзину</button>
-              <button class="modal-item__btn-to-card">
+              <button class="modal-item__btn-to-favorite">
                 <svg
-                  width="52"
-                  height="45"
+                  width="44"
+                  height="37"
                   viewBox="0 0 52 45"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
@@ -526,7 +528,7 @@
       </div>
     </div>
 
-    <div class="overlay overlay_cart">
+    <div class="overlay overlay_cart" hidden>
       <div class="overlay__modal">
         <button class="overlay__button-close"></button>
         <form class="modal-cart">
@@ -568,9 +570,11 @@
                     Итог:
                     <output class="modal-cart__total-price" name="total=price"
                       >9000 <span>₽</span>
-                      </output>
+                    </output>
                   </p>
-                  <button class="modal-cart__submit" type="submit">Оофрмить заказ</button>
+                  <button class="modal-cart__submit" type="submit">
+                    Оофрмить заказ
+                  </button>
                 </div>
               </div>
             </li>

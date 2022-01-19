@@ -1,5 +1,4 @@
 const burgerMenu = ( {selectorBtn, selectorMenu, classActive, selectorClose} ) => {
-    console.log(selectorBtn, selectorMenu, classActive);
 
     const btn = document.querySelector(selectorBtn);
     const menu = document.querySelector(selectorMenu);
