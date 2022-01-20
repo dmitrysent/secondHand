@@ -16,13 +16,6 @@ burgerMenu({
     selectorClose: '.navigation__link, .header__btn',
 });
 
-searchControl({
-    selectorBtn: '.search__button',
-    selectorForm: '.search',
-    classActive: 'search_active',
-    selectorClose: '.search__close',
-    breakpoint: 760,
-});
 
 selectControl ({
     selectorBtn: '.footer__subtitle',
@@ -40,6 +33,16 @@ const checkSlider = slider ({
     bulletClass: 'hero__slider-line',
     bulletActiveClass: 'hero__slider-line_active',
 });
+
+searchControl({
+    selectorBtn: '.search__button',
+    selectorForm: '.search',
+    classActive: 'search_active',
+    selectorClose: '.search__close',
+    breakpoint: 760,
+    callback: checkSlider,
+});
+
 
 // checkSlider();
 renderGoods(location.search);

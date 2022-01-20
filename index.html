@@ -33,7 +33,7 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a class="header__logo" href="/">
+        <a class="header__logo" href="index.html">
           <img class="header__logo-img" src="img/logo.svg" alt="Лого сайта" />
         </a>
 
@@ -69,8 +69,8 @@
         </nav>
 
         <div class="header__search">
-          <form action="?" class="search">
-            <input type="search" class="search__input" />
+          <form action="index.html" class="search" required>
+            <input type="search" name="search" class="search__input" />
             <button class="search__button" type="button"></button>
             <button class="search__close" type="button"></button>
           </form>
@@ -528,7 +528,7 @@
       </div>
     </div>
 
-    <div class="overlay overlay_cart" hidden>
+    <div class="overlay overlay_cart">
       <div class="overlay__modal">
         <button class="overlay__button-close"></button>
         <form class="modal-cart">
