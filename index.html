@@ -529,7 +529,7 @@
     </div>
 
     <div class="overlay overlay_cart">
-      <div class="overlay__modal">
+      <div class="overlay__modal overlay__modal_cart">
         <button class="overlay__button-close"></button>
         <form class="modal-cart">
           <ul class="modal-cart__list">
@@ -549,9 +549,13 @@
                   <li class="props__item">
                     <h4 class="props__title">Количество:</h4>
                     <div class="props__description">
-                      <button class="props__btn props__btn_minus">-</button>
-                      <output class="pops__count" name="count">2</output>
-                      <button class="props__btn props__btn_plus">+</button>
+                      <button class="props__btn props__btn_minus" type="button">
+                        -
+                      </button>
+                      <output class="props__count" name="count">2</output>
+                      <button class="props__btn props__btn_plus" type="button">
+                        +
+                      </button>
                     </div>
                   </li>
 
@@ -564,21 +568,20 @@
                     <p class="props__description">9000 ₽</p>
                   </li>
                 </ul>
-
-                <div class="modal-cart__footer">
-                  <p class="modal-cart__total">
-                    Итог:
-                    <output class="modal-cart__total-price" name="total=price"
-                      >9000 <span>₽</span>
-                    </output>
-                  </p>
-                  <button class="modal-cart__submit" type="submit">
-                    Оофрмить заказ
-                  </button>
-                </div>
               </div>
             </li>
           </ul>
+          <div class="modal-cart__footer">
+            <p class="modal-cart__total">
+              Итог:
+              <output class="modal-cart__total-price" name="total=price"
+                >9000 <span>₽</span>
+              </output>
+            </p>
+            <button class="modal-cart__submit" type="submit">
+              Оформить заказ
+            </button>
+          </div>
         </form>
       </div>
     </div>

@@ -1,0 +1,44 @@
+.props {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.props__item {
+
+}
+
+.props__title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--titile-card-color);
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.props__description {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  gap: 7px;
+}
+
+.props__btn_minus,
+.props__btn_plus {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  border: none;
+  font-size: 14px;
+}
+
+.props__count {
+
+}
+

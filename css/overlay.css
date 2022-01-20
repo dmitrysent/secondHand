@@ -25,7 +25,9 @@
   padding: 80px 150px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
-
+.overlay__modal_cart {
+  padding: 60px 100px;
+}
 .overlay__button-close {
   position: absolute;
   top: 30px;
