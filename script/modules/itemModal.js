@@ -1,13 +1,15 @@
 import serviceGoods from "../service/serviceGoods.js";
-import { getStorage } from "../service/serviceStorage.js";
+import {
+  getStorage
+} from "../service/serviceStorage.js";
 
 const img = document.querySelector('.modal-item__img');
 const title = document.querySelector('.modal-item__title');
 const advantageList = document.querySelector('.modal-item__advantage-list');
 const article = document.querySelector('.modal-item__text_article');
-const btnToCart = document.querySelector('.modal-item__btn-to-card');
+const btnToCart = document.querySelector('.modal-item__btn-to-cart');
 const btnToFavorite = document.querySelector('.modal-item__btn-to-favorite');
- 
+
 const renderModal = (data) => {
 
   img.src = data.image;
@@ -28,41 +30,56 @@ const renderModal = (data) => {
       </li>
     `;
   };
+
   advantageList.innerHTML = htmlAdvantage;
+
   const allFavorite = getStorage('favorite');
   if (allFavorite.includes(data.id)) {
     btnToFavorite.classList.add('active');
   } else {
     btnToFavorite.classList.remove('active');
   }
-  
+
+  const addCart = getStorage('cart');
+  const itemCart = addCart.find(item => item.id === data.id);
+
+  btnToCart.textContent = itemCart ? `${itemCart.count} в корзине` : `В корзину`;
 
 };
 
 
 
 const itemModal = ({
-                    selectorHandler,
-                    selectorParent,
-                    selectorModal,
-                    classActive,
-                    closeSelector,
-                  }) => {
+  selectorHandler,
+  selectorParent,
+  selectorModal,
+  classActive,
+  closeSelector,
+  callback,
+}) => {
   const modal = document.querySelector(selectorModal);
   if (selectorParent) {
     const parent = document.querySelector(selectorParent);
-    
+
+
     parent.addEventListener('click', async e => {
       const target = e.target.closest(selectorHandler);
 
       if (target) {
-        await serviceGoods(renderModal, `/${target.dataset.id}`)
+        await serviceGoods(renderModal, `/${target.dataset.id}`);
+        if (callback) callback();
         modal.classList.add(classActive);
       }
     })
-  
+
   } else {
-    const target = document.querySelector(selectorHandler)
+    const targets = document.querySelectorAll(selectorHandler)
+    targets.forEach(target => {
+      target.addEventListener('click', () => {
+        if (callback) callback();
+        modal.classList.add(classActive);
+      })
+    })
   }
 
   modal.addEventListener('click', e => {

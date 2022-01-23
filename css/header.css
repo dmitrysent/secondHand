@@ -31,7 +31,7 @@
     background-position: center;
     background-size: contain;
 }
-.header__btn_card {
+.header__btn_cart {
     background-image: url("../img/card.svg");
     transition: all .3s;
 
@@ -46,7 +46,7 @@
     transition: all .3s;
 }
 
-.header__btn_card:hover,
+.header__btn_cart:hover,
 .header__btn-favorite:hover,
 .header__btn-person:hover {
     opacity: 0.5;

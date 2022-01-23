@@ -9,9 +9,6 @@
   z-index: 999;
 }
 
-.overlay_cart {
-  display: flex;
-}
 
 .overlay_active {
   display: flex;
