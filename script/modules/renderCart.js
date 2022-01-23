@@ -63,7 +63,7 @@ const renderList = (cart) => {
     totalPrice += truePrice * obj.count;
   })
 
-  cartTotal.textContent = totalPrice;
+  cartTotal.textContent = `${totalPrice} ₽`;
 };
 
 const renderCart = () => {
