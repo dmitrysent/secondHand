@@ -1,11 +1,9 @@
 # secondHand
 
-<<<<<<< HEAD
-## Сайт интернет магазина
-=======
+## Сайт интернет магазина Second Hand
 ## Адаптивная, кроссбраузерная вёрстка сайта
 
-### github pages https://dmitrysent.github.io/secondHand
+###  [demo]:https://dmitrysent.github.io/secondHand
 
 Загрузка списка товаров происходит с сервера heroku.
 Возможна задержка в отображении товаров в течение 5-15 секунд после входа на сайт.
